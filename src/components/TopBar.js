@@ -4,7 +4,7 @@ import LogoStore from '../logo-store.png';
 const TopBar = () => {
     return (
         <div className="header">
-             <img src={LogoStore} />
+             <img src={LogoStore} alt="logo store" />
         </div>
        
     )
