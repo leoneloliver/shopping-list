@@ -88,3 +88,8 @@ Input.input {
 .btn-container{
   margin-top: 10px;;
 }
+.total{
+  padding: 5px;
+  margin-bottom: 5px;
+  color: #fff;
+}

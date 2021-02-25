@@ -50,6 +50,7 @@ const App = () => {
 
   return (
     <div className="app">
+      <div className="total">{ todos.length > 0 && `Task(s) ${todos.length}` }</div>
       <div className="todo-list">
         {todos.map((todo, index) => (
           <Todo
