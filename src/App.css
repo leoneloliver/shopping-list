@@ -35,7 +35,7 @@ img {
   height: auto;
 }
 .app {
-  background: #209cee;
+  background: #ebebeb;
   height: 100vh;
   padding: 30px;
 }
@@ -54,14 +54,14 @@ img {
   display: flex;
   justify-content: space-between;
   margin-bottom: 6px;
-  padding: 12px;
+  padding: 12px 0;
   padding-left: 25px;
 }
 
 button {
   font-size: 1rem;
   margin-right: 12px;
-  padding: 10px 25px;
+  padding: 10px 20px;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -91,5 +91,31 @@ Input.input {
 .total{
   padding: 5px;
   margin-bottom: 5px;
-  color: #fff;
+  color: #333;
+}
+.header{
+  text-align: center;
+}
+.header img{
+  width: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .app {
+    padding: 8px;
+  }
+  button{
+    margin-right: 5px;
+    padding: 9px 12px;
+  }
+  .todo{
+    padding-left: 10px;
+  }
+  .todo-list{
+    padding: 3px;
+  }
+  .container-btn{
+    min-width: 125px;
+  }
+  
 }

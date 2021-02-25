@@ -3,6 +3,8 @@ import "./App.css";
 import Todo from './components/Todo';
 import TodoForm from './components/TodoForm';
 import TodoClean from './components/TodoClean';
+import TopBar from './components/TopBar';
+
 
 const LOCAL_STORAGE_KEY = "my-todo-list";
 
@@ -50,6 +52,7 @@ const App = () => {
 
   return (
     <div className="app">
+      < TopBar />
       <div className="total">{ todos.length > 0 && `Task(s) ${todos.length}` }</div>
       <div className="todo-list">
         {todos.map((todo, index) => (

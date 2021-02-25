@@ -11,7 +11,7 @@ const Todo = ({ todo, index, completeTodo, removeTodo }) => {
             >
             {/* {index + 1} - {todo.text*/}
             {todo.text}
-            <div>
+            <div className="container-btn">
                 <button
                 onClick={() => completeTodo(index)}
                 className="complete"
@@ -19,7 +19,7 @@ const Todo = ({ todo, index, completeTodo, removeTodo }) => {
                     backgroundColor: todo.isCompleted ? "#b6beb6" : ""
                 }}
                 >
-                Complete
+                {todo.isCompleted ? " ✓ Done " : "Pending" }
                 </button>
                 <button onClick={() => removeTodo(index)} className="delete">
                 x
