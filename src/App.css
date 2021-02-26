@@ -41,7 +41,7 @@ img {
 }
 
 .todo-list {
-  background: #4c4c4c;
+  background: #424242;
   border-radius: 4px;
   padding: 8px;
 }
@@ -106,6 +106,7 @@ Input.input {
   font-size: 1.2rem;
   padding: 5px;
   font-style: normal;
+  margin-top: 9px;
 }
 @media only screen and (max-width: 600px) {
   .app {

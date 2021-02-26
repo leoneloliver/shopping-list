@@ -7,7 +7,8 @@ const Todo = ({ todo, index, completeTodo, removeTodo }) => {
             style={{
                 textDecoration: todo.isCompleted ? "line-through" : null,
                 color: todo.isCompleted ? "#ff8e8e" : "#b3b3b3",
-                background: todo.isCompleted ? '#4e4e4e' : null
+                background: todo.isCompleted ? '#4e4e4e' : null,
+                boxShadow: todo.isCompleted ? null : '1px 2px 1px 0px #1e1e1e'
             }}
             >
             {/* {index + 1} - {todo.text*/}
