@@ -35,20 +35,20 @@ img {
   height: auto;
 }
 .app {
-  background: #ebebeb;
+  background: #3a3a3a;
   height: 100vh;
   padding: 30px;
 }
 
 .todo-list {
-  background: #e8e8e8;
+  background: #4c4c4c;
   border-radius: 4px;
   padding: 8px;
 }
 
 .todo {
   align-items: center;
-  background: #fff;
+  background: #333;
   border-radius: 3px;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
   display: flex;
@@ -68,10 +68,10 @@ button {
   border-radius: 4px;
 }
 .complete {
-  background: #0dbb0d;
+  background: #5a5a5a;
 }
 .delete {
-  background: #ff6363;
+  background: #b43c3c;
 }
 Input.input {
   padding: 12px 20px;
@@ -80,7 +80,9 @@ Input.input {
   margin-top: 5px;
   margin-bottom: 5px;
   border-radius: 5px;
-  border: 1px solid #dcdcdc;
+  border: 1px solid #7b7b7b;
+  background: #282828;
+  color: #b2b2b2;
 }
 .btn-clean{
   width: 100%;
@@ -99,7 +101,12 @@ Input.input {
 .header img{
   width: 50px;
 }
-
+.shopping-title{
+  color: #ccc;
+  font-size: 1.2rem;
+  padding: 5px;
+  font-style: normal;
+}
 @media only screen and (max-width: 600px) {
   .app {
     padding: 8px;

@@ -6,7 +6,8 @@ const Todo = ({ todo, index, completeTodo, removeTodo }) => {
             className="todo"
             style={{
                 textDecoration: todo.isCompleted ? "line-through" : null,
-                color: todo.isCompleted ? "red" : "black"
+                color: todo.isCompleted ? "#ff8e8e" : "#b3b3b3",
+                background: todo.isCompleted ? '#4e4e4e' : null
             }}
             >
             {/* {index + 1} - {todo.text*/}
@@ -16,7 +17,7 @@ const Todo = ({ todo, index, completeTodo, removeTodo }) => {
                 onClick={() => completeTodo(index)}
                 className="complete"
                 style={{
-                    backgroundColor: todo.isCompleted ? "#b6beb6" : ""
+                    backgroundColor: todo.isCompleted ? "#434141" : ""
                 }}
                 >
                 {todo.isCompleted ? " ✓ Done " : "Pending" }

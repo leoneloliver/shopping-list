@@ -10,10 +10,10 @@ const LOCAL_STORAGE_KEY = "my-todo-list";
 
 const App = () => {
 
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState([{'text':'Apple'},{'text':'Bananas'}]);
 
   // adding todo to localstorage
-  useEffect(() =>{
+  useEffect(() => {
     const storageTodos = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
     if(storageTodos){
       setTodos(storageTodos);
@@ -53,7 +53,7 @@ const App = () => {
   return (
     <div className="app">
       < TopBar />
-      <div className="total">{ todos.length > 0 && `Task(s) ${todos.length}` }</div>
+      <div className="total">{ todos.length > 0 && `Item(s) ${todos.length}` }</div>
       <div className="todo-list">
         {todos.map((todo, index) => (
           <Todo
