@@ -30,13 +30,23 @@ ul {
   list-style: none;
 }
 
+
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #3a3a3a;
+}
+html {
+  height: 100%;
+}
+
+
 img {
   max-width: 100%;
   height: auto;
 }
 .app {
-  background: #3a3a3a;
-  height: 100vh;
   padding: 30px;
 }
 

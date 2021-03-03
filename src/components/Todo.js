@@ -15,16 +15,16 @@ const Todo = ({ todo, index, completeTodo, removeTodo }) => {
             {todo.text}
             <div className="container-btn">
                 <button
-                onClick={() => completeTodo(index)}
-                className="complete"
-                style={{
-                    backgroundColor: todo.isCompleted ? "#434141" : ""
-                }}
+                    onClick={() => completeTodo(index)}
+                    className="complete"
+                    style={{
+                        backgroundColor: todo.isCompleted ? "#434141" : ""
+                    }}
                 >
-                {todo.isCompleted ? " ✓ Done " : "Pending" }
+                    {todo.isCompleted ? " ✓ Done " : "Pending" }
                 </button>
                 <button onClick={() => removeTodo(index)} className="delete">
-                x
+                    x
                 </button>
             </div>
         </div>
